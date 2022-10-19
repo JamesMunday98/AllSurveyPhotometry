@@ -43,7 +43,7 @@ checkLocalStars.py - performs a search for Gaia to not bother obtaining TESS/ATL
 
 
 # A note on science usage
-I recommend using this package to simply to check what data is available on various surveys... and then to check the data outputs and use my individual getScripts to help with that. I take no responsibility for supplying data for published work - for this you should check the original sources.
+I recommend using this package to simply to check what data is available on various surveys... and then to inspect the raw data outputs (from the surveys, not my script), using my individual getScripts to help with that. I take no responsibility for supplying data for published work.
 
 # Where might the queries break?
 - Is your proper motion huge? Not all surveys have a proper motion option that can be accounted for. You should increase your search radius... but be prepared for some junk
@@ -74,6 +74,6 @@ Make all time similar (will not matter much at all for most science needs)
 Include ASAS  
 Include APASS
 Improve TESS/Kepler  
-Neated many bits of code
+Neaten many bits of code
 
 
