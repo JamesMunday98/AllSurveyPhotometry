@@ -4,22 +4,22 @@ The package will obtain all time-series photometry associated with the object th
   
 # Current list that can be accessed with the ease:  
 
-| Survey      | Function  | Comments     |
+| Survey      | Function  | Comments     |  Output Time Format (UTC, unless special)  |
 | :---        |    :----   |    :----       |
-| ATLAS        |    Forced photometry from the ATLAS survey     |    Only query if there are no close contaminants       |
-| ASASSN        |    Find light curves in the full variable star catalogue     |    Requires download of the full catalogue (>40 GB), off by default     |
+| ATLAS        |    Forced photometry from the ATLAS survey     |    Only query if there are no close contaminants       | MJD | 
+| ASASSN        |    Find light curves in the full variable star catalogue     |    Requires download of the full catalogue (>40 GB), off by default  | BJD  |
 | ASASSN Web        |    Autogenerate web search criteria for forced photometry   |           |
-| Catalina/CRTS        |    All epoch photometry   |           |
+| Catalina/CRTS        |    All epoch photometry   |    BJD       |
 | CDS        |    Obtain photometric SED for any search radius. Clickable link to CDS for the object   |           |
-| Gaia        |    All epoch photometry/spectra/RVS   |           |
-| Kepler        |    Query the K2 field, extract lightcurves from tpf files    |       Only query if there are no close contaminants   (in progress, I recommend using your own scripts) |
-| NEOWISE        |    Query all photometry with RA/Dec entries around the object   |          The processor to WISE |
-| Panstarrs        |    All epoch photometry from DR1   |           |
-| PTF        |    All epoch photometry   |          (iPTF to be included) |
+| Gaia        |    All epoch photometry/spectra/RVS   |    Gaia units... BJD but slightly different       |
+| Kepler        |    Query the K2 field, extract lightcurves from tpf files    |       Only query if there are no close contaminants   (in progress, I recommend using your own scripts) | Units from Kepler |
+| NEOWISE        |    Query all photometry with RA/Dec entries around the object   |          The processor to WISE |  BJD |
+| Panstarrs        |    All epoch photometry from DR1   |     BJD      |
+| PTF        |    All epoch photometry   |          (iPTF to be included) |  MJD   |
 | SDSS        |    Spectra, finding charts, mean star magnitudes   |           |
-| TESS        |    Query TESS, extract lightcurves from tpf files   |        Only query if there are no close contaminants  (in progress, I recommend using your own scripts) |
-| WISE        |    Query all photometry with RA/Dec entries around the object   |           |
-| ZTF        |    All epoch photometry   |           |
+| TESS        |    Query TESS, extract lightcurves from tpf files   |        Only query if there are no close contaminants  (in progress, I recommend using your own scripts) | BJD | 
+| WISE        |    Query all photometry with RA/Dec entries around the object   |    BJD       |
+| ZTF        |    All epoch photometry   |    MJD       |
 
 
   
@@ -63,5 +63,11 @@ checkLocalStars.py - performs a search for Gaia to not bother obtaining TESS/ATL
 Push a script to access the data and/or supply me basic details of how the data is obtained.
 
 
+
+# To-do list
+Make all time similar (will not matter much at all for most science needs)  
+Include ASAS  
+Include APASS
+Improve TESS/Kepler
 
 
