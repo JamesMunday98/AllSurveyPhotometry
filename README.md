@@ -5,21 +5,21 @@ The package will obtain all time-series photometry associated with the object th
 # Current list of things that can be accessed with the ease:  
 
 | Survey      | Function  | Test Text     |
-| :---        |    :----:   |          ---: |
+| :---        |    :----   |          :--- |
 | ATLAS        |    Forced photometry from the ATLAS survey     |          ---: |
 | ASASSN        |    Find light curves in the full variable star catalogue     |          ---: |
 | ASASSN Web        |    Autogenerate web search criteria for forced photometry   |          ---: |
 | Catalina/CRTS        |    Obtain light curves   |          ---: |
 | CDS        |    Obtain photometric SED for any search radius. Clickable link to CDS for the object   |          ---: |
 | Gaia        |    All Gaia epoch photometry/spectra/RVS   |          ---: |
-| :---        |    :----:   |          ---: |
-| :---        |    :----:   |          ---: |
-| :---        |    :----:   |          ---: |
-| :---        |    :----:   |          ---: |
-| :---        |    :----:   |          ---: |
-| :---        |    :----:   |          ---: |
-| :---        |    :----:   |          ---: |
-| :---        |    :----:   |          ---: |
+| Kepler        |    Query the K2 field, extract lightcurves from tpf files    |          (in progress, I recommend using your own scripts) |
+| NEOWISE        |    Query all photometry with RA/Dec entries around the object   |          The processor to WISE |
+| Panstarrs        |    All epoch photometry from DR1   |          ---: |
+| PTF        |    All epoch photometry   |          (iPTF to be included) |
+| SDSS        |    spectra, finding charts, mean star magnitudes   |          ---: |
+| TESS        |    Query TESS, extract lightcurves from tpf files   |          (in progress, I recommend using your own scripts) |
+| WISE        |    Query all photometry with RA/Dec entries around the object   |          ---: |
+| ZTF        |    All epoch photometry   |          ---: |
 | :---        |    :----:   |          ---: |
 | Paragraph   | Text        | And more      |  
 
