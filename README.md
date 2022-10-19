@@ -6,18 +6,18 @@ The package will obtain all time-series photometry associated with the object th
 
 | Survey      | Function  | Comments     |
 | :---        |    :----   |    :----       |
-| ATLAS        |    Forced photometry from the ATLAS survey     |           |
+| ATLAS        |    Forced photometry from the ATLAS survey     |    Only query if there are no close contaminants       |
 | ASASSN        |    Find light curves in the full variable star catalogue     |    Requires download of the full catalogue (>40 GB)       |
 | ASASSN Web        |    Autogenerate web search criteria for forced photometry   |           |
 | Catalina/CRTS        |    All epoch photometry   |           |
 | CDS        |    Obtain photometric SED for any search radius. Clickable link to CDS for the object   |           |
 | Gaia        |    All epoch photometry/spectra/RVS   |           |
-| Kepler        |    Query the K2 field, extract lightcurves from tpf files    |          (in progress, I recommend using your own scripts) |
+| Kepler        |    Query the K2 field, extract lightcurves from tpf files    |       Only query if there are no close contaminants   (in progress, I recommend using your own scripts) |
 | NEOWISE        |    Query all photometry with RA/Dec entries around the object   |          The processor to WISE |
 | Panstarrs        |    All epoch photometry from DR1   |           |
 | PTF        |    All epoch photometry   |          (iPTF to be included) |
 | SDSS        |    Spectra, finding charts, mean star magnitudes   |           |
-| TESS        |    Query TESS, extract lightcurves from tpf files   |          (in progress, I recommend using your own scripts) |
+| TESS        |    Query TESS, extract lightcurves from tpf files   |        Only query if there are no close contaminants  (in progress, I recommend using your own scripts) |
 | WISE        |    Query all photometry with RA/Dec entries around the object   |           |
 | ZTF        |    All epoch photometry   |           |
 
@@ -29,7 +29,7 @@ The package will obtain all time-series photometry associated with the object th
 Gaia HR plotter  
 Plot all photometry  
 Basic Lomb-Scargle  
-
+checkLocalStars.py - performs a search for Gaia to not bother obtaining TESS/ATLAS/Kepler photometry under certain search radius conditions (read it)  
 
 
 
