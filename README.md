@@ -7,7 +7,7 @@ The package will obtain all time-series photometry associated with the object th
 | Survey      | Function  | Comments     |
 | :---        |    :----   |    :----       |
 | ATLAS        |    Forced photometry from the ATLAS survey     |           |
-| ASASSN        |    Find light curves in the full variable star catalogue     |           |
+| ASASSN        |    Find light curves in the full variable star catalogue     |    Requires download of the full catalogue (>40 GB)       |
 | ASASSN Web        |    Autogenerate web search criteria for forced photometry   |           |
 | Catalina/CRTS        |    All epoch photometry   |           |
 | CDS        |    Obtain photometric SED for any search radius. Clickable link to CDS for the object   |           |
