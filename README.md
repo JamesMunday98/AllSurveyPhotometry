@@ -47,13 +47,16 @@ checkLocalStars.py - performs a search for Gaia to not bother obtaining TESS/ATL
  
 
 ## Required (non standard) packages:
-[Multiprocess](https://pypi.org/project/multiprocess/)  
-[Astropy](https://docs.astropy.org/en/stable/install.html)  
-[Beautiful Soup](https://pypi.org/project/beautifulsoup4/)  
-[PIL](https://pypi.org/project/Pillow/)  
-[Lightkurve](https://docs.lightkurve.org/about/install.html)  
-[Astroquery](https://astroquery.readthedocs.io/en/latest/) - tested with 0.4.6  
-[jdcal](https://pypi.org/project/jdcal/)  
+
+| Package      | Tested with version  |
+| :---        |    :----   |
+|[Multiprocess](https://pypi.org/project/multiprocess/)|  
+|[Astropy](https://docs.astropy.org/en/stable/install.html)| 5.1 |   
+|[Beautiful Soup](https://pypi.org/project/beautifulsoup4/)| 4.11.1 |  
+|[PIL](https://pypi.org/project/Pillow/)| 9.2.0 | 
+|[Lightkurve](https://docs.lightkurve.org/about/install.html)| 2.2.0 |  
+|[Astroquery](https://astroquery.readthedocs.io/en/latest/)|  0.4.6 |  
+|[jdcal](https://pypi.org/project/jdcal/)| 1.4.1 |  
 
 
 # Missing a source that you want included?
