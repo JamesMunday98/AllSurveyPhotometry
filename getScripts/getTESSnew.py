@@ -75,18 +75,20 @@ class TESS(object):
                             except:
                                 None
                         
+                        try:
+                            lc=lc.remove_outliers(sigma=5)
+                            lc=lc.normalize()
+                            
+                            all_lcs.append(lc)
+                        except: None
                         
-                        lc=lc.remove_outliers(sigma=5)
-                        lc=lc.normalize()
-                        
-                        all_lcs.append(lc)
-                        
-                        
-                    lc_obj=lk.LightCurveCollection(all_lcs).stitch()
-                    ax=lc_obj.scatter(title=time)
-                    ax.figure.savefig('AllLC'+str(time)+'.png')
-                    plt.close()
-                    lcfound=True
+                    try:
+                        lc_obj=lk.LightCurveCollection(all_lcs).stitch()
+                        ax=lc_obj.scatter(title=time)
+                        ax.figure.savefig('AllLC'+str(time)+'.png')
+                        plt.close()
+                        lcfound=True
+                    except: None
 
             elif len(search_result_lc) > 1:
                 lc_obj=search_result_lc.stitch().remove_outliers().remove_nans()   # the flux here is meant to automatically be PDCSAP
