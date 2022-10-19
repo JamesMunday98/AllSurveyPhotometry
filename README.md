@@ -4,13 +4,8 @@ The package will obtain all time-series photometry associated with the object th
 
 What do you need to do?
 - Clone this repository and look at getScripts/getpwds.py  . Here you need to include your [ATLAS](https://fallingstar-data.com/forcedphot/) login details and your [IRSA](https://irsa.ipac.caltech.edu/Missions/ztf.html) account details.
+- Install these relevant packages 
  
-
-
-
-
-
-
 
 Required (non standard) packages:
 [Multiprocess](https://pypi.org/project/multiprocess/)  
