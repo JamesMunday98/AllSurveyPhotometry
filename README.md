@@ -6,11 +6,25 @@ The package will obtain all time-series photometry associated with the object th
 
 | Syntax      | Description | Test Text     |
 | :---        |    :----:   |          ---: |
-| Header      | Title       | Here's this   |
+| ATLAS        |    :----:   |          ---: |
+| :---        |    :----:   |          ---: |
+| :---        |    :----:   |          ---: |
+| :---        |    :----:   |          ---: |
+| :---        |    :----:   |          ---: |
+| :---        |    :----:   |          ---: |
+| :---        |    :----:   |          ---: |
+| :---        |    :----:   |          ---: |
+| :---        |    :----:   |          ---: |
+| :---        |    :----:   |          ---: |
+| :---        |    :----:   |          ---: |
+| :---        |    :----:   |          ---: |
+| :---        |    :----:   |          ---: |
+| :---        |    :----:   |          ---: |
+| :---        |    :----:   |          ---: |
 | Paragraph   | Text        | And more      |  
 
 
-ATLAS  
+  
 ASASSN variable catalogue  
 ASASSN Web  
 Catalina/CRTS  
