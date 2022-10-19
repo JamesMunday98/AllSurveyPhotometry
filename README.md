@@ -11,7 +11,7 @@ The package will obtain all time-series photometry associated with the object th
 | ASASSN Web        |    Autogenerate web search criteria for forced photometry   |           |
 | Catalina/CRTS        |    All epoch photometry   | |    BJD       |
 | CDS        |    Obtain photometric SED for any search radius. Clickable link to CDS for the object   |           |
-| Gaia        |    All epoch photometry/spectra/RVS   |    Gaia units... BJD but slightly different       |
+| Gaia        |    All epoch photometry/spectra/RVS   |   | Gaia units... BJD but slightly different       |
 | Kepler        |    Query the K2 field, extract lightcurves from tpf files    |       Only query if there are no close contaminants   (in progress, I recommend using your own scripts) | Units from Kepler |
 | NEOWISE        |    Query all photometry with RA/Dec entries around the object   |          The processor to WISE |  BJD |
 | Panstarrs        |    All epoch photometry from DR1   | |     BJD      |
@@ -37,9 +37,9 @@ checkLocalStars.py - performs a search for Gaia to not bother obtaining TESS/ATL
 # What do you need to do?
 - Clone this repository and look at getScripts/getpwds.py  . Here you need to include your [ATLAS](https://fallingstar-data.com/forcedphot/) login details and your [IRSA](https://irsa.ipac.caltech.edu/Missions/ztf.html) account details.
 - Open the obtainDataMutiprocess.py script and scroll to the __main__ part.  You will see boolean statements for which surveys you want to query and some optional commands (e.g. proper motion) which need to be set... a list of default options are included but may not grant full functionality.
-- Read in your RA and Dec (or lists of these)
+- Read in your RA and Dec (or lists of these) in degrees
 - (Optional) Inspect the search options for each survey - separated at the top of obtainMultiProcess.py are the search radii for each survey
-- If you simply run the script after unpacking the
+- If you simply run the script after unpacking the files... it should work. The directory "Objects" should be created and you will see each multiple folders for 15 RAs/Decs within. You can enter each folder to see what the outputs look like. The list is 15 random objects from a search, but the ones with e.g. RA = 23:55:36.77 or RA = 23:55:00.12 have many things
 
 
 # A note on science usage
@@ -66,7 +66,8 @@ I recommend using this package to simply to check what data is available on vari
 # Missing a source that you want included?
 Push a script to access the data and/or supply me basic details of how the data is obtained.
 
-
+# Bugs/improvements?
+Please let me know! Email/make an issue
 
 # To-do list
 Make all time similar (will not matter much at all for most science needs)  
