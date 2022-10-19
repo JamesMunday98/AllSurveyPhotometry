@@ -2,7 +2,7 @@
 The package will obtain all time-series photometry associated with the object that is publicly available. All you need is the RA and Dec!
 
   
-# Current list of things that can be accessed with the ease:  
+# Current list that can be accessed with the ease:  
 
 | Survey      | Function  | Comments     |
 | :---        |    :----   |    :----       |
