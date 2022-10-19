@@ -9,17 +9,17 @@ The package will obtain all time-series photometry associated with the object th
 | ATLAS        |    Forced photometry from the ATLAS survey     |    Only query if there are no close contaminants       | MJD | 
 | ASASSN        |    Find light curves in the full variable star catalogue     |    Requires download of the full catalogue (>40 GB), off by default  | BJD  |
 | ASASSN Web        |    Autogenerate web search criteria for forced photometry   |           |
-| Catalina/CRTS        |    All epoch photometry   |    BJD       |
+| Catalina/CRTS        |    All epoch photometry   | |    BJD       |
 | CDS        |    Obtain photometric SED for any search radius. Clickable link to CDS for the object   |           |
 | Gaia        |    All epoch photometry/spectra/RVS   |    Gaia units... BJD but slightly different       |
 | Kepler        |    Query the K2 field, extract lightcurves from tpf files    |       Only query if there are no close contaminants   (in progress, I recommend using your own scripts) | Units from Kepler |
 | NEOWISE        |    Query all photometry with RA/Dec entries around the object   |          The processor to WISE |  BJD |
-| Panstarrs        |    All epoch photometry from DR1   |     BJD      |
+| Panstarrs        |    All epoch photometry from DR1   | |     BJD      |
 | PTF        |    All epoch photometry   |          (iPTF to be included) |  MJD   |
 | SDSS        |    Spectra, finding charts, mean star magnitudes   |           |
 | TESS        |    Query TESS, extract lightcurves from tpf files   |        Only query if there are no close contaminants  (in progress, I recommend using your own scripts) | BJD | 
-| WISE        |    Query all photometry with RA/Dec entries around the object   |    BJD       |
-| ZTF        |    All epoch photometry   |    MJD       |
+| WISE        |    Query all photometry with RA/Dec entries around the object  | |    BJD       |
+| ZTF        |    All epoch photometry  | |    MJD       |
 
 
   
@@ -40,6 +40,10 @@ checkLocalStars.py - performs a search for Gaia to not bother obtaining TESS/ATL
 - Read in your RA and Dec (or lists of these)
 - (Optional) Inspect the search options for each survey - separated at the top of obtainMultiProcess.py are the search radii for each survey
 - If you simply run the script after unpacking the
+
+
+# A note on science usage
+I recommend using this package to simply to check what data is available on various surveys... and then to check the data outputs and use my individual getScripts to help with that. I take no responsibility for supplying data for published work - for this you should check the original sources.
 
 # Where might the queries break?
 - Is your proper motion huge? Not all surveys have a proper motion option that can be accounted for. You should increase your search radius... but be prepared for some junk
