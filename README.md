@@ -3,6 +3,13 @@ The package will obtain all time-series photometry associated with the object th
 
   
 # Current list of things that can be accessed with the ease:  
+
+| Syntax      | Description | Test Text     |
+| :---        |    :----:   |          ---: |
+| Header      | Title       | Here's this   |
+| Paragraph   | Text        | And more      |  
+
+
 ATLAS  
 ASASSN variable catalogue  
 ASASSN Web  
