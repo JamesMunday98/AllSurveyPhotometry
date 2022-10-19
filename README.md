@@ -42,3 +42,9 @@ Basic Lomb-Scargle
 [Lightkurve](https://docs.lightkurve.org/about/install.html)  
 [Astroquery](https://astroquery.readthedocs.io/en/latest/)  
 [jdcal](https://pypi.org/project/jdcal/)  
+
+
+# Missing a source that you want included?
+Push a script to access the data and/or supply basic details of where the data is obtained.
+
+
