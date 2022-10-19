@@ -4,7 +4,7 @@ The package will obtain all time-series photometry associated with the object th
   
 Current list of things that can be accessed with the ease:  
 ATLAS  
-ASASSN  
+ASASSN variable catalogue 
 ASASSN Web  
 Catalina/CRTS  
 CDS  
