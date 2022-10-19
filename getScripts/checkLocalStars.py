@@ -102,10 +102,10 @@ class checkLocalStars(object):
                 return "Good"
             elif np.all(star_mag < result_ATLAS['Gmag']+0.5) and np.all(result_ATLAS_MASSIVE['Gmag'] > 13): # elif it is half a mag brighter than the others in the local area
                 #print("maybe, take care for ATLAS")
-                print("stopped atlas maybe")
+                print("ATLAS data may be poor due to a close contaminant")
                 return "Maybe"
             else: # don't try, too much faff
-                print("stopped atlas bad")
+                print("ATLAS data is very likely poor quality from a close and bright contaminant, so I am not querying ATLAS")
                 #print("Did not pass checkLocalStars.py check for ATLAS, so I will not query ATLAS")
                 return "No"
         else:
