@@ -40,7 +40,7 @@ class checkLocalStars(object):
                 print("passed checks with other stars");
                 return "Good"
             elif np.all(star_mag < result_TESS['Gmag']+0.5) and star_mag<=18 and np.all(result_TESS_MASSIVE['Gmag'] > 10): # elif it is half a mag brighter than the others in the local area
-                print("maybe, take care, not included in the combined period search")
+                print("maybe, take care for TESS")
                 return "Maybe"
             else: # don't try, too much faff if dimmer than 18 for little gain
                 print("nope")
@@ -70,7 +70,7 @@ class checkLocalStars(object):
                 #print("passed checks with other stars")
                 return "Good"
             elif np.all(star_mag < result_K2['Gmag']+0.5) and star_mag<=18 and np.all(result_K2_MASSIVE['Gmag'] > 10): # elif it is half a mag brighter than the others in the local area
-                #print("maybe, take care, not included in the combined period search")
+                #print("maybe, take care for K2")
                 return "Maybe"
             else: # don't try, too much faff
                 #print("nope")
@@ -101,7 +101,7 @@ class checkLocalStars(object):
                 #print("passed checks with other stars")
                 return "Good"
             elif np.all(star_mag < result_ATLAS['Gmag']+0.5) and np.all(result_ATLAS_MASSIVE['Gmag'] > 13): # elif it is half a mag brighter than the others in the local area
-                #print("maybe, take care, not included in the combined period search")
+                #print("maybe, take care for ATLAS")
                 print("stopped atlas maybe")
                 return "Maybe"
             else: # don't try, too much faff
