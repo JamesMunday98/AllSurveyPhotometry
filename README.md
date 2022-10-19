@@ -29,7 +29,7 @@ Are you as sick of people saying after talks "have you checked XXX for data?" as
 Gaia HR plotter  
 Plot all photometry  
 Basic Lomb-Scargle  
-checkLocalStars.py - performs a search for Gaia to not bother obtaining TESS/ATLAS/Kepler photometry under certain search radius conditions (read it)  
+checkLocalStars.py - performs a search for close stars using Gaia to not bother obtaining TESS/ATLAS/Kepler photometry. The search radius conditions reflect the pixel scale of the detector (read it)  
 
 
 
