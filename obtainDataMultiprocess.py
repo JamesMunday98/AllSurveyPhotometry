@@ -293,7 +293,7 @@ if __name__ == '__main__':
     
     # TESS exposure times to search for? not all are always available
     exptimes=['fast', 'short', 'long']
-    t = Table.read("/Users/james/Desktop/DWDs/dwd.fits")
+    t = Table.read("example.fits")
 
 
     NameOfNewDir = "Objects"
