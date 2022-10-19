@@ -19,7 +19,7 @@ WISE
 ZTF  
 
 
-Extras:
+Extras:  
 Gaia HR plotter  
 Plot all photometry  
 Basic Lomb-Scargle  
