@@ -5,7 +5,7 @@ The package will obtain all time-series photometry associated with the object th
 # Current list that can be accessed with the ease:  
 
 | Survey      | Function  | Comments     |  Output Time Format (UTC, unless special)  |
-| :---        |    :----   |    :----       |
+| :---        |    :----   |    :----       | :----       |
 | ATLAS        |    Forced photometry from the ATLAS survey     |    Only query if there are no close contaminants       | MJD | 
 | ASASSN        |    Find light curves in the full variable star catalogue     |    Requires download of the full catalogue (>40 GB), off by default  | BJD  |
 | ASASSN Web        |    Autogenerate web search criteria for forced photometry   |           |
