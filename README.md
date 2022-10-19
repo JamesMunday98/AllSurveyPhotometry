@@ -7,7 +7,7 @@ The package will obtain all time-series photometry associated with the object th
 | Survey      | Function  | Comments     |
 | :---        |    :----   |    :----       |
 | ATLAS        |    Forced photometry from the ATLAS survey     |    Only query if there are no close contaminants       |
-| ASASSN        |    Find light curves in the full variable star catalogue     |    Requires download of the full catalogue (>40 GB)       |
+| ASASSN        |    Find light curves in the full variable star catalogue     |    Requires download of the full catalogue (>40 GB), off by default     |
 | ASASSN Web        |    Autogenerate web search criteria for forced photometry   |           |
 | Catalina/CRTS        |    All epoch photometry   |           |
 | CDS        |    Obtain photometric SED for any search radius. Clickable link to CDS for the object   |           |
@@ -36,9 +36,10 @@ checkLocalStars.py - performs a search for Gaia to not bother obtaining TESS/ATL
 
 # What do you need to do?
 - Clone this repository and look at getScripts/getpwds.py  . Here you need to include your [ATLAS](https://fallingstar-data.com/forcedphot/) login details and your [IRSA](https://irsa.ipac.caltech.edu/Missions/ztf.html) account details.
-- Open the obtainDataMutiprocess.py script and scroll to the __main__ part.  You will see boolean statements for which surveys you want to query and some optional commands (e.g. proper motion) which need to be set... a list of default options are included but may not have full functionality.
+- Open the obtainDataMutiprocess.py script and scroll to the __main__ part.  You will see boolean statements for which surveys you want to query and some optional commands (e.g. proper motion) which need to be set... a list of default options are included but may not grant full functionality.
 - Read in your RA and Dec (or lists of these)
-- (Optional) Inspect the search options for each survey - separated at the top of obtainMultiProcess.py are the radii for each survey
+- (Optional) Inspect the search options for each survey - separated at the top of obtainMultiProcess.py are the search radii for each survey
+- If you simply run the script after unpacking the
 
 # Where might the queries break?
 - Is your proper motion huge? Not all surveys have a proper motion option that can be accounted for. You should increase your search radius... but be prepared for some junk
@@ -51,11 +52,13 @@ checkLocalStars.py - performs a search for Gaia to not bother obtaining TESS/ATL
 [Beautiful Soup](https://pypi.org/project/beautifulsoup4/)  
 [PIL](https://pypi.org/project/Pillow/)  
 [Lightkurve](https://docs.lightkurve.org/about/install.html)  
-[Astroquery](https://astroquery.readthedocs.io/en/latest/)  
+[Astroquery](https://astroquery.readthedocs.io/en/latest/) - tested with 0.4.6  
 [jdcal](https://pypi.org/project/jdcal/)  
 
 
 # Missing a source that you want included?
 Push a script to access the data and/or supply me basic details of how the data is obtained.
+
+
 
 
