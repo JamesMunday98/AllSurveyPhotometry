@@ -43,7 +43,7 @@ class checkLocalStars(object):
                 print("maybe, take care for TESS")
                 return "Maybe"
             else: # don't try, too much faff if dimmer than 18 for little gain
-                print("nope")
+                print("Did not pass checkLocalStars.py check for TESS, so I will not query TESS")
                 return "No"
         else: 
             #print("only star in field, good to go")
@@ -73,7 +73,7 @@ class checkLocalStars(object):
                 #print("maybe, take care for K2")
                 return "Maybe"
             else: # don't try, too much faff
-                #print("nope")
+                #print("Did not pass checkLocalStars.py check for K2, so I will not query K2")
                 return "No"
         else:
             #print("only star, fine to go"); 
@@ -106,7 +106,7 @@ class checkLocalStars(object):
                 return "Maybe"
             else: # don't try, too much faff
                 print("stopped atlas bad")
-                #print("nope")
+                #print("Did not pass checkLocalStars.py check for ATLAS, so I will not query ATLAS")
                 return "No"
         else:
             #print("only star, fine to go"); 
