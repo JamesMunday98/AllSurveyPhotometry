@@ -42,6 +42,7 @@ checkLocalStars.py - performs a search for Gaia to not bother obtaining TESS/ATL
 
 # Where might the queries break?
 - Is your proper motion huge? Not all surveys have a proper motion option that can be accounted for. You should increase your search radius... but be prepared for some junk
+- Remember that ground based telescopes will have their declination limits - your source might not be available everywhere
  
 
 ## Required (non standard) packages:
