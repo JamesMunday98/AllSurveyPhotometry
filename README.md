@@ -36,8 +36,12 @@ Basic Lomb-Scargle
 
 # What do you need to do?
 - Clone this repository and look at getScripts/getpwds.py  . Here you need to include your [ATLAS](https://fallingstar-data.com/forcedphot/) login details and your [IRSA](https://irsa.ipac.caltech.edu/Missions/ztf.html) account details.
-- Read in your RA and Dec (or list of these)
-- (Optional) Inspect the search options for each survey
+- Open the obtainDataMutiprocess.py script and scroll to the __main__ part.  You will see boolean statements for which surveys you want to query and some optional commands (e.g. proper motion) which need to be set... a list of default options are included but may not have full functionality.
+- Read in your RA and Dec (or lists of these)
+- (Optional) Inspect the search options for each survey - separated at the top of obtainMultiProcess.py are the radii for each survey
+
+# Where might the queries break?
+- Is your proper motion huge? Not all surveys have a proper motion option that can be accounted for. You should increase your search radius... but be prepared for some junk
  
 
 ## Required (non standard) packages:
