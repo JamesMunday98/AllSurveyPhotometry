@@ -276,7 +276,7 @@ if __name__ == '__main__':
     wantK2=True
     wantTess=True
     wantZTF=True
-    wantATLASforced=False
+    wantATLASforced=True
     wantCatalina=True
     wantSED=True
     wantPTF=True
