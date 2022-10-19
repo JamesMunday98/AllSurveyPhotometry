@@ -5,7 +5,7 @@ The package will obtain all time-series photometry associated with the object th
 # Current list of things that can be accessed with the ease:  
 
 | Survey      | Function  | Comments     |
-| :---        |    :----   |           |
+| :---        |    :----   |    :----       |
 | ATLAS        |    Forced photometry from the ATLAS survey     |           |
 | ASASSN        |    Find light curves in the full variable star catalogue     |           |
 | ASASSN Web        |    Autogenerate web search criteria for forced photometry   |           |
