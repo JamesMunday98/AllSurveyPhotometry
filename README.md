@@ -55,6 +55,6 @@ checkLocalStars.py - performs a search for Gaia to not bother obtaining TESS/ATL
 
 
 # Missing a source that you want included?
-Push a script to access the data and/or supply basic details of where the data is obtained.
+Push a script to access the data and/or supply me basic details of how the data is obtained.
 
 
