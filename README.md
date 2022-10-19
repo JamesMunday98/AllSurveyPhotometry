@@ -30,7 +30,8 @@ Basic Lomb-Scargle
 
 # What do you need to do?
 - Clone this repository and look at getScripts/getpwds.py  . Here you need to include your [ATLAS](https://fallingstar-data.com/forcedphot/) login details and your [IRSA](https://irsa.ipac.caltech.edu/Missions/ztf.html) account details.
-- Install these relevant packages 
+- Read in your RA and Dec (or list of these)
+- (Optional) Inspect the search options for each survey
  
 
 ## Required (non standard) packages:
