@@ -35,10 +35,10 @@ checkLocalStars.py - performs a search for Gaia to not bother obtaining TESS/ATL
 
 
 # What do you need to do?
-- Clone this repository and look at getScripts/getpwds.py  . Here you need to include your [ATLAS](https://fallingstar-data.com/forcedphot/) login details and your [IRSA](https://irsa.ipac.caltech.edu/Missions/ztf.html) account details.
+- Download this repository and look at getScripts/getpwds.py  . Here you need to include your [ATLAS](https://fallingstar-data.com/forcedphot/) login details and your [IRSA](https://irsa.ipac.caltech.edu/Missions/ztf.html) account details.
 - Open the obtainDataMutiprocess.py script and scroll to the __main__ part.  You will see boolean statements for which surveys you want to query and some optional commands (e.g. proper motion) which need to be set... a list of default options are included but may not grant full functionality.
 - Read in your RA and Dec (or lists of these) in degrees
-- (Optional) Inspect the search options for each survey - separated at the top of obtainMultiProcess.py are the search radii for each survey
+- (Optional) Inspect the search options for each survey - separated at the top of each function in obtainMultiProcess.py are the search radii for each survey
 - If you simply run the script after unpacking the files... it should work. The directory "Objects" should be created and you will see each multiple folders for 15 RAs/Decs within. You can enter each folder to see what the outputs look like. The list is 15 random objects from a search, but the ones with e.g. RA = 23:55:36.77 or RA = 23:55:00.12 have many things
 
 
@@ -73,6 +73,7 @@ Please let me know! Email/make an issue
 Make all time similar (will not matter much at all for most science needs)  
 Include ASAS  
 Include APASS
-Improve TESS/Kepler
+Improve TESS/Kepler  
+Neated many bits of code
 
 
