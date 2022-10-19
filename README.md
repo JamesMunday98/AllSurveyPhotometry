@@ -15,8 +15,8 @@ https://irsa.ipac.caltech.edu/Missions/ztf.html
 Required (non standard) packages:
 Multiprocessing - pip install multiprocess  
 Astropy  
-Beautiful Soup - pip install beautifulsoup4
-PIL - pip install Pillow
-Lightkurve - https://docs.lightkurve.org/about/install.html
-Astroquery - https://astroquery.readthedocs.io/en/latest/
+Beautiful Soup - pip install beautifulsoup4  
+PIL - pip install Pillow  
+Lightkurve - https://docs.lightkurve.org/about/install.html  
+Astroquery - https://astroquery.readthedocs.io/en/latest/  
 jdcal - pip install jdcal
