@@ -54,6 +54,7 @@ I recommend using this package to simply to check what data is available on vari
 
 | Package      | Tested with version  |
 | :---        |    :----   |
+| Python | 3.7/3.9 |
 |[Multiprocess](https://pypi.org/project/multiprocess/)|  
 |[Astropy](https://docs.astropy.org/en/stable/install.html)| 5.1 |   
 |[Beautiful Soup](https://pypi.org/project/beautifulsoup4/)| 4.11.1 |  
