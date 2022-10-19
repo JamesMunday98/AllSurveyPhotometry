@@ -28,12 +28,12 @@ Basic Lomb-Scargle
 
 
 
-#What do you need to do?
+# What do you need to do?
 - Clone this repository and look at getScripts/getpwds.py  . Here you need to include your [ATLAS](https://fallingstar-data.com/forcedphot/) login details and your [IRSA](https://irsa.ipac.caltech.edu/Missions/ztf.html) account details.
 - Install these relevant packages 
  
 
-##Required (non standard) packages:
+## Required (non standard) packages:
 [Multiprocess](https://pypi.org/project/multiprocess/)  
 [Astropy](https://docs.astropy.org/en/stable/install.html)  
 [Beautiful Soup](https://pypi.org/project/beautifulsoup4/)  
