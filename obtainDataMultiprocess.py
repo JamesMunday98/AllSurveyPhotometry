@@ -415,9 +415,9 @@ if __name__ == '__main__':
             p7 = Process(target = FinalPanstarrs(RAdeg, Decdeg))
             p7.start()
         
-        if Gaia_Gmag >= 11: # saturation limit
-            p8 = Process(target = FinalASASSN(RAdeg, Decdeg, eDR3name="EDR3 "+str(GaiaSourceID)))
-            p8.start()
+        #if Gaia_Gmag >= 11: # saturation limit
+        #    p8 = Process(target = FinalASASSN(RAdeg, Decdeg, eDR3name="EDR3 "+str(GaiaSourceID)))
+        #    p8.start()
         
         p9 = Process(target = FinalWISE(RAdeg, Decdeg, gmag=Gaia_Gmag))
         p9.start()
@@ -453,9 +453,9 @@ if __name__ == '__main__':
         if Gaia_Gmag >= 12: # saturation limit
             try: p7.join()
             except: None
-        if Gaia_Gmag >= 11: # saturation limit
-            try: p8.join()
-            except: None
+        #if Gaia_Gmag >= 11: # saturation limit
+        #    try: p8.join()
+        #    except: None
         p9.join()
         
         
