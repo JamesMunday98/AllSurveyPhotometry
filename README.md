@@ -9,7 +9,7 @@ The package will obtain all time-series photometry associated with the object th
 | ATLAS        |    Forced photometry from the ATLAS survey     |           |
 | ASASSN        |    Find light curves in the full variable star catalogue     |           |
 | ASASSN Web        |    Autogenerate web search criteria for forced photometry   |           |
-| Catalina/CRTS        |    Obtain light curves   |          ---: |
+| Catalina/CRTS        |    Obtain light curves   |           |
 | CDS        |    Obtain photometric SED for any search radius. Clickable link to CDS for the object   |           |
 | Gaia        |    All Gaia epoch photometry/spectra/RVS   |           |
 | Kepler        |    Query the K2 field, extract lightcurves from tpf files    |          (in progress, I recommend using your own scripts) |
@@ -25,7 +25,7 @@ The package will obtain all time-series photometry associated with the object th
   
 
 
-Extras:  
+### Extras:  
 Gaia HR plotter  
 Plot all photometry  
 Basic Lomb-Scargle  
