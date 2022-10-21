@@ -71,7 +71,6 @@ Push a script to access the data and/or supply me basic details of how the data 
 Please let me know! Email/make an issue
 
 # To-do list
-Make all time similar (will not matter much at all for most science needs)  
 Include ASAS  
 Include APASS
 Improve TESS/Kepler  
