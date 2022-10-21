@@ -1,5 +1,5 @@
 # All Survey Time-Series Photometry
-Are you as sick of people saying after talks "have you checked XXX for data?" as I am? Well look no further. This package will obtain all time-series photometry associated with the object that is publicly available. All you need is the RA and Dec!
+Are you sick of people saying after talks "have you checked XXX for data"? As I am, so look no further. This package will obtain all time-series photometry associated with the object that is publicly available. All you need is the RA and Dec!
 
   
 # Current list that can be accessed with the ease:  
