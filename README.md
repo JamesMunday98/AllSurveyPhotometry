@@ -68,7 +68,9 @@ I recommend using this package to simply to check what data is available on vari
 Push a script to access the data and/or supply me basic details of how the data is obtained.
 
 # Bugs/improvements?
-Please let me know! Email/make an issue
+One bug you may encounter when searching for TESS data is "buffer too small". This is because of a lack of available RAM.
+
+If there are any others, please let me know! Email/make an issue
 
 # To-do list
 Include ASAS  
