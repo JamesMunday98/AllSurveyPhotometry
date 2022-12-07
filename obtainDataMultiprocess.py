@@ -276,7 +276,7 @@ if __name__ == '__main__':
     wantK2=True
     wantTess=True
     wantZTF=True
-    wantATLASforced=True
+    wantATLASforced=True # this might take a couple of minutes as a request is queued to their server
     wantCatalina=True
     wantSED=True
     wantPTF=True
@@ -382,7 +382,7 @@ if __name__ == '__main__':
         if wantTess==True:
             returnClause = checkLocalStars.localTESS(obj,star_mag)
             if returnClause == "Good":
-                p2 = Process(target = Final_TESS(RADec,g))
+                p2 = Process(target = Final_TESS(RADec,Gaia_Gmag))
                 p2.start()
                 joinTESS=True
         
