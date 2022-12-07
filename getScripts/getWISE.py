@@ -22,7 +22,7 @@ import astropy
 
 
 
-# PLEASE READ THIS if you wander why I change the MJD https://wise2.ipac.caltech.edu/docs/release/neowise/expsup/sec1_2.html#exptime_offset
+# PLEASE READ THIS if you wonder why I change the MJD https://wise2.ipac.caltech.edu/docs/release/neowise/expsup/sec1_2.html#exptime_offset
 class WISE(object):
     def queryWise(RAdeg,Decdeg, ref_epoch=2020,pmra=0,pmdec=0):
         ############## correct for proper motion (rough, but better than nothing)
