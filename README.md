@@ -2,7 +2,7 @@
 Are you sick of people saying after talks "have you checked XXX for data"? As I am, so look no further. This package will obtain all time-series photometry associated with the object that is publicly available. All you need is the RA and Dec!
 
   
-# Current list that can be accessed with the ease:  
+# Current list of implemented surveys:  
 
 | Survey      | Function  | Comments     |  Output Time Format (UTC, unless special)  |
 | :---        |    :----   |    :----       | :----       |
