@@ -200,7 +200,7 @@ def Final_ATLAS_forced(RAdeg, Decdeg, RA, Dec, reference_epoch, pmra, pmdec): #c
 def Final_Catalina(RAdeg,Decdeg,ref_epoch,pmra,pmdec):
     # get Catalina
     radius_catalina = 2.5/60  # passed as arcsec, so this is 3 arc seconds
-    if wantCatalina==True and not "CatalinaDataset.csv" in os.listdir(os.getcwd()): # this is globally set at the start
+    if wantCatalina==True and not "Catalina.csv" in os.listdir(os.getcwd()): # this is globally set at the start
         try:
             getCatalinaData.getData(RAdeg,Decdeg,ref_epoch,pmra,pmdec,radius_catalina)
             getCatalinaData.plot()
@@ -208,9 +208,9 @@ def Final_Catalina(RAdeg,Decdeg,ref_epoch,pmra,pmdec):
         except: None
     
 
-def FinalGAIA(ProbWD,RADec, BP_RP, Abs_g, TeffH, gmag):
+def FinalGAIA(RADec, BP_RP, Abs_g, gmag):
     if wantGaiaHR ==True:
-        OverplotGaia.plotGaia(ProbWD,RADec, BP_RP, Abs_g, TeffH, gmag)
+        OverplotGaia.plotGaia(RADec, BP_RP, Abs_g, gmag)
 
 def FinalPanstarrs(RAdeg,Decdeg):
     radius_Panstarrs = 3/3600
@@ -424,7 +424,7 @@ if __name__ == '__main__':
         
         # plot gaia hr
         try:
-            p10 = Process(target = FinalGAIA(probWD, RADec, BPRP, GaiaABS_G, Teff, gmag=Gaia_Gmag))
+            p10 = Process(target = FinalGAIA(RADec, BPRP, GaiaABS_G, gmag=Gaia_Gmag))
             p10.start()
         except: None
         
