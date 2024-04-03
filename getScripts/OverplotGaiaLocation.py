@@ -13,7 +13,7 @@ import numpy as np
 sys.path.insert(0, "/home/astro/phrsjf/PeriodSearcher2/getScripts/getScripts")
 
 class OverplotGaia(object):
-    def plotGaia(ProbWD, RADec, BPRP, Abs_g, TeffH, gmag):
+    def plotGaia(RADec, BPRP, Abs_g, gmag):
         img = mpimg.imread('../../getScripts/Screenshot.png')
         
         RADecsplit=str(RADec).split(":")
@@ -31,10 +31,10 @@ class OverplotGaia(object):
         #plt.xlim(-0.75,2.2)
         #plt.ylim(5,17)
         try:
-            plt.title(str(RADecTitle) + ", P_wd = " + str(np.round(ProbWD,3)) + ", T_h = "+str(int(TeffH))+"K, gmag = " + str(gmag), fontsize=10)
+            plt.title(str(RADecTitle) + ", gmag = " + str(gmag), fontsize=10)
         except:
             try:
-                plt.title(str(RADecTitle) + ", P_wd = " + str(np.round(ProbWD,3)) + ", gmag = " + str(gmag), fontsize=10)
+                plt.title(str(RADecTitle) + ", gmag = " + str(gmag), fontsize=10)
             except: None
         
         

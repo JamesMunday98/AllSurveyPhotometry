@@ -69,7 +69,8 @@ class K2(object):
                 lc_obj=search_result_lc.stitch().remove_outliers().remove_nans()   # the flux here is meant to automatically be PDCSAP
             plt.close()
             
-            np.savetxt("K2data_"+str(exptime)+".csv", np.array([lc_obj.time, lc_obj.flux, lc_obj.flux_err]).T, fmt="%s")
+            try:     np.savetxt("K2data_"+str(exptime)+".csv", np.array([lc_obj.time, lc_obj.flux, lc_obj.flux_err]).T, fmt="%s")
+            except:  print("No K2 data found.\n")
             
             try: # this will only break if lc_obj does not exist
                 #ts=lc_obj.time

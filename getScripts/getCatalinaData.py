@@ -72,7 +72,7 @@ class getCatalinaData(object):
         try:
             link=a[0][-52:]+"web_file"+a[2][:-40]; #print(link)
             
-            with urllib.request.urlopen(link) as testfile, open('CatalinaDataset.csv', 'w') as f:
+            with urllib.request.urlopen(link) as testfile, open('Catalina.csv', 'w') as f:
                 f.write(testfile.read().decode())
         except : None
             #np.savetxt("CATALINA_NOT_FOUND_ON_QUERY.txt", np.array(["this is weird because it was found in a vizier search"]), fmt="%s")
@@ -84,7 +84,7 @@ class getCatalinaData(object):
         
         
     def plot(savefig=True):
-        fi= np.genfromtxt('CatalinaDataset.csv', delimiter=',', unpack=True, skip_header=1)
+        fi= np.genfromtxt('Catalina.csv', delimiter=',', unpack=True, skip_header=1)
         
         # mask to avoid any blended items
         MasterID, Mag, Magerr, RA, Dec, MJD, Blend =fi.T[np.array(fi[6]==0)].T
@@ -111,7 +111,7 @@ class getCatalinaData(object):
     
     
     def handleData(RAdeg,Decdeg):
-        fi= np.genfromtxt('CatalinaDataset.csv', delimiter=',', unpack=True, skip_header=1)
+        fi= np.genfromtxt('Catalina.csv', delimiter=',', unpack=True, skip_header=1)
         
         # mask to avoid any blended items
         MasterID, Mag, Magerr, RA, Dec, MJD, Blend =fi.T[np.array(fi[6]==0)].T
@@ -121,7 +121,7 @@ class getCatalinaData(object):
         
         
         BJD = miscAstro.jd_corr(MJD, RAdeg, Decdeg, CatalinaLoc, jd_type='bjd').value
-        np.savetxt('CatalinaDataBJD.csv', np.array([BJD,Mag,Magerr]).T)
+        np.savetxt('CatalinaBJD.csv', np.array([BJD,Mag,Magerr]).T)
         
         
 
